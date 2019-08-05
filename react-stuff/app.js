@@ -17,11 +17,12 @@ fetch('http://tryingout.s437.sureserver.com/wp-json/wp/v2/posts')
 	render(){
 	 return(
 	 <div>
-		<h1>List of Post Titles</h1>
-		 {console.log(this.state.jason)}
+		<h1>Blog.</h1>
+		 {console.log(this.state.posts)}
 			{this.state.posts.map((posts, index) => (
-		 <div>
-			<h1>{posts.title.rendered}</h1>
+		 <div className="post-containers">
+			<h2>{posts.title.rendered}</h2>
+			{posts.content.rendered}
 		 </div>
 		 )
 	 )}
