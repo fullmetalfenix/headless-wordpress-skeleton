@@ -20,9 +20,9 @@ fetch('http://tryingout.s437.sureserver.com/wp-json/wp/v2/posts')
 		<h1>Blog.</h1>
 		 {console.log(this.state.posts)}
 			{this.state.posts.map((posts, index) => (
-		 <div className="post-containers">
+		 <div className="post-containers"  key={index}>
 			<h2>{posts.title.rendered}</h2>
-			{posts.content.rendered}
+			<p>{posts.content.rendered.replace(/<\/p>/g, '').replace(/<p>/g, '')}</p>
 		 </div>
 		 )
 	 )}
