@@ -12,3 +12,16 @@ drop the 'react-stuff' folder into the current theme folder*
  *Why did I do it this way? Beceause then I can go into the wordpress dash and edit my application code in the theme editor. This is just to play around with for now so I like the option to do everything through the WP admin area 
  
 
+## Step 3
+
+Change the instance of {{your url here}} to your url - this is making a call to the wp api to fetch your posts on component mount and loading it into the state object.
+
+Thats it! It should be up and running
+
+_Further information:_
+
+###What else is going on? 
+ There are 2 aditional things going on here you should be aware of:
+  1. I only rendered the post exerpt (as a default wp setup does) but I added some code that will render the post body on "Read More" - Hows that work? When you click "read more" it triggers the renderBody function and sets the selectedPost to the index of the post, rendering the full post body.
+
+  2. there is some regex to remove some default wordpress html tags (<p> tags specifically) that usually suround some of the data from the api.
