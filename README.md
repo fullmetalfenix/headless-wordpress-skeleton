@@ -7,9 +7,9 @@ drop the index.html in the root
  - Application container 
  
 ## Step Two:
-drop the 'react-stuff' folder into the current theme folder*
+drop the 'react-stuff' folder into the current theme folder *
  
- *Why did I do it this way? Beceause then I can go into the wordpress dash and edit my application code in the theme editor. This is just to play around with for now so I like the option to do everything through the WP admin area 
+ *Why did I do it this way? Because then I can go into the wordpress dash and edit my application code in the theme editor. This is just to play around with for now so I like the option to do everything through the WP admin area 
  
 
 ## Step Three
@@ -23,7 +23,7 @@ Thats it! It should be up and running
 
 _Further information:_
 
-###What else is going on? 
+### What else is going on? 
  There are 2 aditional things going on here you should be aware of:
   1. I only rendered the post exerpt (as a default wp setup does) but I added some code that will render the post body on "Read More" - Hows that work? When you click "read more" it triggers the renderBody function and sets the selectedPost to the index of the post, rendering the full post body.
 
