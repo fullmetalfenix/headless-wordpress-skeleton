@@ -4,62 +4,76 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- 
+        Links to CDN's - easyset way to include react - these are the development links - 
+        you can an updated set of links as well as the production links here: https://reactjs.org/docs/cdn-links.html 
+    -->
     <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <!-- CDN to add babel-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.38/browser.js"></script>
+    <!-- 
+        Remember: type here is text/babel so the file will be interpreted correctly
+        The src should be changed to wherever your app.js file will be.
+    -->
     <script type="text/babel" src="/wp-content/themes/twentynineteen/react-stuff/app.js" ></script>
     <title>React and Wordpress Test</title>
-    <style>
-.post-containers{
-     margin: 50px auto;
-     max-width: 800px;
-     padding: 40px;
-     box-shadow: 0px 2px 2px rgba(0,0,0,.3);
-     border-radius: 10px;
-     font-family: sans-serif;
-     font-size: 18px;
-     text-align: left;
-     background: rgba(30,30,30);
-     color: rgba(250,250,250, .87);
-}
-h2{
-    text-align: left;
-    font-family: georgia;
-    border-bottom: 8px dotted rgba(250,250,250, .72);
-    padding-bottom: 15px;
-    font-size: 32px;
-}
-body{
-background: linear-gradient(178deg, transparent 500px, rgba(0,0,0,.5) 510px, white 510px), url(science.png)
-}
 
-h1{
-text-align: center;
-    font-size: 42px;
-    font-family: georgia;
-    background: white;
-    text-shadow: 0px 0px 3px white;
-    padding: 30px;
-    width: 100%;
-    margin: auto;
-    max-width: 600px;
-    border-radius: 10px;
-    margin-top: 40px;
-}
-button{
-color: rgba(0,0,0,.87);
-    background: #65eeff;
-    border: 0px;
-    font-weight: 800;
-    border-radius: 5px;
-    padding: 10px 16px;
-    box-shadow: 0px 2px 2px #949393;
-    transition: background .25s;
-}
-button:hover{
- cursor: pointer;
- background: #4ed7e8;
-}
+    <!-- 
+        This is just some CSS to make the project look nicer - embedded for ease of use. 
+        You can change it however you want, include it in an exterior file or delete it entirely if you want
+    -->
+    <style>
+    .post-containers{
+         margin: 50px auto;
+         max-width: 800px;
+         padding: 40px;
+         box-shadow: 0px 2px 2px rgba(0,0,0,.3);
+         border-radius: 10px;
+         font-family: sans-serif;
+         font-size: 18px;
+         text-align: left;
+         background: rgba(30,30,30);
+         color: rgba(250,250,250, .87);
+    }
+    h2{
+        text-align: left;
+        font-family: georgia;
+        border-bottom: 8px dotted rgba(250,250,250, .72);
+        padding-bottom: 15px;
+        font-size: 32px;
+    }
+    body{
+    background: linear-gradient(178deg, transparent 500px, rgba(0,0,0,.5) 510px, white 510px), url(science.png)
+    }
+
+    h1{
+    text-align: center;
+        font-size: 42px;
+        font-family: georgia;
+        background: white;
+        text-shadow: 0px 0px 3px white;
+        padding: 30px;
+        width: 100%;
+        margin: auto;
+        max-width: 600px;
+        border-radius: 10px;
+        margin-top: 40px;
+    }
+    button{
+    color: rgba(0,0,0,.87);
+        background: #65eeff;
+        border: 0px;
+        font-weight: 800;
+        border-radius: 5px;
+        padding: 10px 16px;
+        box-shadow: 0px 2px 2px #949393;
+        transition: background .25s;
+    }
+    button:hover{
+     cursor: pointer;
+     background: #4ed7e8;
+    }
     </style>
 </head>
 <body>
