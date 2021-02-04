@@ -2,9 +2,15 @@
 Barebones two file headless wordpress setup using react via cdn that should take only a minute or two to set up. 
 
 ## Step one:
-drop the index.html in the root
+drop the index.html in the root folder
  - CDN for React / Babel included
  - Application container 
+ 
+ Note: If your using xampp for local development you may have to open up your .htaccess file and add: 
+ 
+ `DirectoryIndex index.html index.php`
+ 
+ Whats this do? It gives your new index.html precedent over index.php, like you would find on most web servers out in the wild.
  
 ## Step Two:
 drop the 'react-stuff' folder into the current theme folder *
