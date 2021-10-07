@@ -1,8 +1,14 @@
 # headless-wordpress-skeleton
 Barebones two file headless wordpress setup using react via cdn that should take only a minute or two to set up. 
 
-## Step one:
-drop the index.html in the root folder
+ 
+## Step One:
+drop the 'react-stuff' folder into the current theme folder * (remember what theme you chose to drop it in for the next step)
+ 
+ *Why did I do it this way? Because then I can go into the wordpress dash and edit my application code in the theme editor. This is just to play around with for now so I like the option to do everything through the WP admin area 
+
+## Step Two:
+drop the index.html in the root folder - change the script tag to add your site url where it says `<your-site>` and change to `<your-theme>` to your theme name from your last step.
  - CDN for React / Babel included
  - Application container 
  
@@ -10,13 +16,7 @@ drop the index.html in the root folder
  
  `DirectoryIndex index.html index.php`
  
- Whats this do? It gives your new index.html precedent over index.php, like you would find on most web servers out in the wild.
- 
-## Step Two:
-drop the 'react-stuff' folder into the current theme folder *
- 
- *Why did I do it this way? Because then I can go into the wordpress dash and edit my application code in the theme editor. This is just to play around with for now so I like the option to do everything through the WP admin area 
- 
+ Whats this do? It gives your new index.html precedent over index.php, like you would find on most web servers out in the wild. 
 
 ## Step Three
 
