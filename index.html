@@ -16,7 +16,10 @@
         Remember: type here is text/babel so the file will be interpreted correctly
         The src should be changed to wherever your app.js file will be.
     -->
-    <script type="text/babel" src="/wp-content/themes/twentynineteen/react-stuff/app.js" ></script>
+
+
+    <!--Replace '<url-to-your-wp-site>' with your site --> 	
+    <script type="text/babel" src="<your-site>/wp-content/themes/react-stuff/app.js" ></script>
     <title>React and Wordpress Test</title>
 
     <!-- 
@@ -44,7 +47,8 @@
         font-size: 32px;
     }
     body{
-    background: linear-gradient(178deg, transparent 500px, rgba(0,0,0,.5) 510px, white 510px), url(science.png)
+    background: linear-gradient(178deg, transparent 500px, rgba(0,0,0,.5) 510px, white 510px), url(science.png);
+    min-height: 100vh;
     }
 
     h1{
