@@ -31,6 +31,6 @@ _Further information:_
 
 ### What else is going on? 
  There are 2 aditional things going on here you should be aware of:
-  1. I only rendered the post exerpt (as a default wp setup does) but I added some code that will render the post body on "Read More" - Hows that work? When you click "read more" it triggers the renderBody function and sets the selectedPost to the index of the post, rendering the full post body.
+  1. I only rendered the post exerpt (as a default wp setup does) but I added some code that will render the post body on "Read More" - Hows that work? When you click "read more" it triggers the renderBody function (in the class version) or the useState setter (in the functional version) and sets the selectedPost to the index of the post, rendering the full post body.
 
   2. there is some regex to remove some default wordpress html tags (<p> tags specifically) that usually suround some of the data from the api.
