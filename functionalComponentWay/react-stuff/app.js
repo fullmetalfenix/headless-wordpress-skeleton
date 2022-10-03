@@ -5,7 +5,7 @@ const Initial = () =>{
   var [selectedPost, setSelectedPost] = React.useState('')
 
   React.useEffect(() => {
-    fetch('http://localhost/mock/wordpress/wp-json/wp/v2/posts')
+    fetch('<your-site>/wp-json/wp/v2/posts')
         .then(x => x.json())
         .then(x => setPosts(x))
       .catch((err) => {

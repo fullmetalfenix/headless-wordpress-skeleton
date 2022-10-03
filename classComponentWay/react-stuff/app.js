@@ -11,7 +11,7 @@ class Initial extends React.Component{
     // On component mount (to the dom) fetch the posts	
     componentDidMount(){
     // Replace '<url-to-your-wp-site>' with your site 	
-    fetch('<url-to-your-wp-site>/wp-json/wp/v2/posts')
+    fetch('<your-site>/wp-json/wp/v2/posts')
         .then(x => x.json())
         .then(x => this.setState({posts: x}))
     } 

@@ -8,7 +8,7 @@ drop the 'react-stuff' folder into the current theme folder * (remember what the
  *Why did I do it this way? Because then I can go into the wordpress dash and edit my application code in the theme editor. This is just to play around with for now so I like the option to do everything through the WP admin area 
 
 ## Step Two:
-drop the index.html in the root folder - change the script tag to add your site url where it says `<your-site>` and change to `<your-theme>` to your theme name from your last step.
+drop the index.html in the root folder - change the script tag to add your site url where it says `<your-site>` and change to `<your-theme>` to your current themes folders name from your last step.
  - CDN for React / Babel included
  - Application container 
  
