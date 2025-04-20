@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,69 +19,93 @@
     -->
 
 
-    <!--Replace '<url-to-your-wp-site>' with your site --> 	
-    <script type="text/babel" src="<your-site>/wp-content/themes/<your-theme>/react-stuff/app.js" ></script>
-    <title>Test <!-- <whatever your site is titled>--></title>
+    <!--Replace '<url-to-your-wp-site>' with your site -->
+    <!-- <script type="text/babel" src="<your-site>/wp-content/themes/<your-theme>/react-stuff/app.js" ></script> -->
 
+    <!-- <whatever your site is titled>-->
+    <title>Test </title>
+    <script type="text/babel" src="http://localhost:8080/react-stuff/app.js"></script>
     <!-- 
         This is just some CSS to make the project look nicer - embedded for ease of use. 
         You can change it however you want, include it in an exterior file or delete it entirely if you want
     -->
     <style>
-    .post-containers{
-         margin: 50px auto;
-         max-width: 800px;
-         padding: 40px;
-         box-shadow: 0px 2px 2px rgba(0,0,0,.3);
-         border-radius: 10px;
-         font-family: sans-serif;
-         font-size: 18px;
-         text-align: left;
-         background: rgba(30,30,30);
-         color: rgba(250,250,250, .87);
-    }
-    h2{
-        text-align: left;
-        font-family: georgia;
-        border-bottom: 8px dotted rgba(250,250,250, .72);
-        padding-bottom: 15px;
-        font-size: 32px;
-    }
-    body{
-    background: linear-gradient(178deg, transparent 500px, rgba(0,0,0,.5) 510px, white 510px), url(science.png);
-    min-height: 100vh;
-    }
+        .post-containers {
+            margin: 50px auto;
+            max-width: 800px;
+            padding: 40px;
+            box-shadow: 0px 2px 2px rgba(0, 0, 0, .3);
+            border-radius: 10px;
+            font-family: sans-serif;
+            font-size: 18px;
+            text-align: left;
+            background: rgba(30, 30, 30);
+            color: rgba(250, 250, 250, .87);
+        }
+        .blog-container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
 
-    h1{
-    text-align: center;
-        font-size: 42px;
-        font-family: georgia;
-        background: white;
-        text-shadow: 0px 0px 3px white;
-        padding: 30px;
-        width: 100%;
-        margin: auto;
-        max-width: 600px;
-        border-radius: 10px;
-        margin-top: 40px;
-    }
-    button{
-    color: rgba(0,0,0,.87);
-        background: #65eeff;
-        border: 0px;
-        font-weight: 800;
-        border-radius: 5px;
-        padding: 10px 16px;
-        box-shadow: 0px 2px 2px #949393;
-        transition: background .25s;
-    }
-    button:hover{
-     cursor: pointer;
-     background: #4ed7e8;
-    }
+        h2 {
+            text-align: left;
+            font-family: georgia;
+            border-bottom: 8px dotted rgba(250, 250, 250, .72);
+            padding-bottom: 15px;
+            font-size: 32px;
+        }
+
+        body {
+            background: linear-gradient(178deg, transparent 500px, rgba(0, 0, 0, .5) 510px, white 510px), url(science.png);
+            min-height: 100vh;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 42px;
+            font-family: georgia;
+            background: white;
+            text-shadow: 0px 0px 3px white;
+            padding: 30px;
+            width: 100%;
+            margin: auto;
+            max-width: 600px;
+            border-radius: 10px;
+            margin-top: 40px;
+        }
+
+        button {
+            color: rgba(0, 0, 0, .87);
+            background: #65eeff;
+            border: 0px;
+            font-weight: 800;
+            border-radius: 5px;
+            padding: 10px 16px;
+            box-shadow: 0px 2px 2px #949393;
+            transition: background .25s;
+        }
+
+        button:hover {
+            cursor: pointer;
+            background: #4ed7e8;
+        }
+
+        .readmore {
+            display: block;
+            margin-top: 22px;
+            font-size: 18px;
+        }
+        .load-more-button{
+            font-size: 18px;
+            min-width: 400px;
+            padding: 18px;
+        }
     </style>
 </head>
+
 <body>
     <div id="app-container"></div>
 </body>
+
 </html>
